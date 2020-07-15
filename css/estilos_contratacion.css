@@ -1,0 +1,186 @@
+*{ margin: 0; padding: 0;}
+
+/*--------------------------------BARRA LOGO--------------------------------*/
+
+.barra_logo{
+    background-color: #ffff00;
+    width: 100%;
+    height: 18%;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    box-shadow: 1px 1px 7px hsla(5, 1%, 1%, .8);
+}
+    .barra_logo img{ width: 25%;}
+    .boton{
+        margin: 1.5% 3%;
+        float: left;
+        padding: 15px;
+        position: relative;
+        font-size: 2em;
+        background-color: #ffff00;
+        border: 0;
+        color: #10455B;
+    }
+    .boton ul{
+        margin: 15px -20px;
+        display: none;
+        list-style: none;
+        text-align: left;
+        font-size: .8em;
+        background-color: #ffff00;
+        padding: 15px;
+        position: absolute;
+    }
+    .item_menu a{
+        text-align: left;
+        display: inline-block;
+        text-decoration: none;
+        padding: 15px 40px 5px 10px;
+        margin: 5px;
+        color: #10455B;
+    }
+    .item_menu a:hover{ color: #F9FAF5; transition: .5s; }
+    .boton:hover ul{
+        display: block;
+    }
+
+/*-------------------------------INICIO--------------------------------------*/
+.inicio{
+    margin: 7% 0 0;
+    width: 100%;
+    height: 17em;
+    background-image: url("../images/textura.png");
+    background-repeat: repeat;
+    color: #10455B;
+    font-size: 2em;
+    font-weight: bold;
+}
+    .inicio h1{
+        display: inline-block;
+        width: 50%;
+        font-family: 'Playball', cursive;
+        padding: 5% 7% 2%;
+        font-size: 3em;
+    }
+    .inicio ul li{
+        margin: 0 30px;
+        display: inline-block;
+        padding: 10px 40px;
+        list-style: none;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+/*-------------------------------------CONTENIDO-------------------------------------*/
+
+.contenido{
+    margin: 0;
+    background-color: #F9F9ED;
+    box-shadow: 1px 1px 7px #86867F;
+}
+
+/*-------------------------------------TITULO----------------------------------------*/
+
+.contenido .titulo{
+    padding: 5%;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    color: #10455B;
+}
+
+/*-------------------------------------CONTENEDOR------------------------------------*/
+
+.contenedor{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    /*flex-direction: ;*/
+    justify-content: center;
+    padding: 2%;
+}
+    .caja{
+        background-color: #fff;
+        width: 18%;
+        padding: 20px;
+        margin: 5px;
+        box-shadow: 1px 1px 7px gray;
+        text-align: center;
+        color: #50504E;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .caja h2{
+        font-size: 3em;
+        padding: 10px;
+        color: #ffff00;
+        font-family: 'Acme', sans-serif;
+    }
+    .caja a{
+        color: #50504E;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+/*-------------------------------------IMPORTANTE------------------------------------*/
+
+.mensaje{
+    width: 60%;
+    margin: 10% auto;
+    background-color: #10455B;
+    text-align: center;
+    padding: 5%;
+    font-size: 1em;
+    border-radius: 20px;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 1px 1px 7px #000;
+}
+    .mensaje h2{ font-size: 2em; padding: 0 0 5%; color: #fff}
+
+/*------------------------------------BARRA REDES------------------------------------*/
+
+.barra_redes{
+	position: fixed;
+	top: 200px;
+	left: 0;
+	padding: 0;
+}	
+	.barra_redes ul{ list-style: none; padding: 0;}
+	.barra_redes a{
+		color: #fff;
+		text-decoration: none;
+		display: inline-block;
+		box-shadow: 1px 1px 5px #000;
+		padding: 10px 15px;
+		font-size: 1.5em;
+	}
+	.insta{ background-color: #C13584}
+	.face{ background-color: #4267B2;}
+	.mail{ background-color: #000;}
+	.whap{ background-color: #4AC959;}
+	.barra_redes ul li .mail{ padding: 10px 14px;}
+	.barra_redes a:hover{ padding: 10px 30px; transition: .3s;}
+	.barra_redes ul li .mail:hover{ padding: 10px 30px;}
+
+/*------------------------------------PIE DE PAGINA-----------------------------------*/
+
+.pie_pag{
+    background-color: #10455B;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F9FAF5;
+    font-size: 1em;
+}
+    .pie_pag{ font-size: .8em; }
+    .pie{ margin: 0px 20px; flex: 1; text-align: center;}
+    .redes li{
+        list-style: none;
+        display: inline-block;
+        padding: 10px 15px;
+        font-size: 3em;
+    }
+    .redes li a{ color: #F9FAF5;}
