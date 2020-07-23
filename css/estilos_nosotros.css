@@ -6,15 +6,19 @@
 .barra_logo{
     background-color: #ffff00;
     width: 100%;
-    text-align: center;
 	position: fixed;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: row-reverse;
     top: 0;
 	box-shadow: 1px 1px 7px hsla(5, 1%, 1%, .6);
 }
+	.imagen{ width: 95%;}
+	.caja_boton{ width: 5%;}
 	.barra_logo img{ width: 30%; margin: 1%;}
 	.boton{
 		margin: 1.5% 3%;
-		float: left;
 		padding: 15px;
 		position: relative;
 		font-size: 2em;
@@ -49,7 +53,7 @@
 .titulo{
 	width: 100%;
 	height: 20em;
-	margin: 0;
+	margin: 10% 0 0;
 	font-size: 2em;
 	text-align: center;
 	color: #10455B; 
@@ -57,7 +61,7 @@
 	background-repeat: repeat;
 }
 	.titulo h1{
-		padding: 20% 0 0;
+		padding: 10% 0 0;
 		font-family: 'Playball', cursive;
 		font-size: 3em;
 	}
@@ -141,8 +145,11 @@
     color: #F9FAF5;
     font-size: 1em;
 }
-    .pie_pag p{ font-size: .8em; }
-    .pie{ margin: 0; flex: 1; text-align: center;}
+    .pie_pag p{ font-size: .8em;}
+	.pie{ margin: 0; text-align: center;}
+	.caja_redes{ width: 50%;}
+	.caja_inst{ width: 25%;}
+	.caja_derec{ width: 25%;}
     .redes li{
         list-style: none;
         display: inline-block;
@@ -157,12 +164,18 @@
 	.barra_redes{
 		display: none;
 	}
+
 	.boton{ font-size: 1.5em;}
+
 	.barra_logo img{ margin: 2%; width: 40%;}
-	.titulo{ font-size: 1em; height: 15em;}
+
+	.titulo{ font-size: 1em; height: 12em; margin: 20% 0 0;}
+
 	.contenedor{ width: 90%;}
 	.contenedor p{ font-size: .6em;}
 	.contenedor h2{ font-size: 1.5em;}
 
+	.pie_pag{ height: 100px;}
+    .pie_pag p{ font-size: .5em;}
 	.redes li{ font-size: 1em; padding: 10px 5px;}
 }
