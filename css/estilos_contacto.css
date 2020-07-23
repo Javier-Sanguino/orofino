@@ -112,7 +112,7 @@
         font-size: 2em;
     }
     .agencia{
-        margin: 10px;
+        margin: 1%;
         padding: 10px;
         width: 30%;
         text-align: center;
@@ -210,7 +210,7 @@ hr{
     .ciudad{ width: 95%;}
     .ciudad img{ height: 200px;}
     .container_agencia{ flex-direction: column;}
-    .agencia{ width: 80%;}
+    .agencia{ width: 80%; margin: 1% auto;}
     .titulo_ciudad{ font-size: 1.5em;}
     .agencia h3{ font-size: 1em;}
     .agencia p{ font-size: .7em;}
