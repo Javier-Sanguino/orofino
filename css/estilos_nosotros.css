@@ -2,16 +2,16 @@
 	margin: 0;
 	padding: 0;
 }
-/*-------------------------------------BARRA LOGO--------------------------*/
+/*-----------------------------------------------------------------BARRA LOGO---------------------------------------------------*/
 .barra_logo{
     background-color: #ffff00;
     width: 100%;
     text-align: center;
-    position: fixed;
+	position: fixed;
     top: 0;
 	box-shadow: 1px 1px 7px hsla(5, 1%, 1%, .6);
 }
-	.barra_logo img{ width: 25%;}
+	.barra_logo img{ width: 30%; margin: 1%;}
 	.boton{
 		margin: 1.5% 3%;
 		float: left;
@@ -67,9 +67,9 @@
 
 /*--------------------------------------CAJAS-------------------------------*/
 .container{
-	width: 98%;
+	width: 100%;
 	margin: 0;
-	padding: 1%;
+	padding: 1% 0;
 	background-color: #F9F9ED;
 	box-shadow: 1px 1px 8px #000;
 }
@@ -81,7 +81,7 @@
 	padding: 3%;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-	text-align: justify;
+	text-align: left;
 	background-color: #10455B;
 	box-shadow: 1px 1px 5px #000;
 }
@@ -96,7 +96,7 @@
 	}
 	.contenedor h2{
 		font-size: 2em;
-		margin: 4% 0 0;
+		/*margin: 4% 0 0;*/
 		padding: 1% 0;
 	}
 	.contenedor p{
@@ -142,11 +142,27 @@
     font-size: 1em;
 }
     .pie_pag p{ font-size: .8em; }
-    .pie{ margin: 0px 20px; flex: 1; text-align: center;}
+    .pie{ margin: 0; flex: 1; text-align: center;}
     .redes li{
         list-style: none;
         display: inline-block;
         padding: 10px 15px;
         font-size: 2.2em;
     }
-    .redes li a{ color: #F9FAF5;} 
+	.redes li a{ color: #F9FAF5;} 
+	
+/*------------------------------------ADAPTABLE------------------------------------------*/
+
+@media( max-width: 480px){
+	.barra_redes{
+		display: none;
+	}
+	.boton{ font-size: 1.5em;}
+	.barra_logo img{ margin: 2%; width: 40%;}
+	.titulo{ font-size: 1em; height: 15em;}
+	.contenedor{ width: 90%;}
+	.contenedor p{ font-size: .6em;}
+	.contenedor h2{ font-size: 1.5em;}
+
+	.redes li{ font-size: 1.2em; padding: 10px 5px;}
+}
