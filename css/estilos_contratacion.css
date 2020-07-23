@@ -214,7 +214,7 @@ body{
         font-size: 1em;
         height: 12em;
     }
-        .inicio h1{ width: 80%; font-size: 2em; padding: 10% 5% 0;}
+        .inicio h1{ width: 90%; font-size: 2.5em; padding: 10% 0 0; text-align: center; margin: 0 5%;}
         .inicio ul{ margin: 5%;}
         .inicio ul li{ font-size: .8em; padding: 1%; margin: 0;}
 
