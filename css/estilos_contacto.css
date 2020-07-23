@@ -6,15 +6,19 @@
 .barra_logo{
     background-color: #ffff00;
     width: 100%;
-    text-align: center;
     position: fixed;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
     top: 0;
     box-shadow: 1px 1px 7px hsla(5, 1%, 1%, .6);
 }
-    .barra_logo img{ width: 25%;}
+    .imagen{ width: 95%;}
+    .caja_boton{ width: 5%;}
+    .barra_logo img{ width: 30%; margin: 1%;}
     .boton{
         margin: 1.5% 3%;
-        float: left;
         padding: 15px;
         position: relative;
         font-size: 2em;
@@ -24,12 +28,12 @@
         text-align: left;
     }
     .boton ul{
-        margin: 15px -20px;
+        margin: 15px -10px;
         display: none;
         list-style: none;
         font-size: .8em;
         background-color: #ffff00;
-        padding: 10px;
+        padding: 10px 35px;
         position: absolute;
     }
     .item_menu a{
@@ -90,6 +94,9 @@
     background-color: #fff;
     border-radius: 20px;
     box-shadow: 1px 1px 7px gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }   
     .container_agencia{
         display: flex;
@@ -110,6 +117,7 @@
         width: 30%;
         text-align: center;
         background-color: #ffffff;
+        font-size: 1em;
     }
     .agencia h3{ color: #10455B;}
     .agencia i{ color: #128c7e; font-size: 1.2em; }
@@ -156,7 +164,10 @@
     font-size: 1em;
 }
     .pie_pag p{ font-size: .8em; }
-    .pie{ margin: 0px 20px; flex: 1; text-align: center;}
+    .caja_redes{ width: 40%;}
+    .caja_inst{ width: 30%;}
+    .caja_derec{ width: 30%;}
+    .pie{ margin: 0; text-align: center;}
     .redes li{
         list-style: none;
         display: inline-block;
@@ -168,4 +179,39 @@ hr{
     background-color: #10455B; 
     height: 2px;
     width:80%; 
+}
+
+/*------------------------------------------------------------ADAPTABLE-------------------------------------------------------------------*/
+
+@media( max-width: 480px){
+    .barra_redes{
+        display: none;
+    }
+
+    .boton{ font-size: 1.5em;}
+
+    .barra_logo img{ margin: 2%; width: 40%;}
+
+    .boton ul{
+        margin: 15px -10px;
+        padding: 10px;
+    }
+
+    .pie_pag{ height: 100px;}
+    .pie_pag p{ font-size: .5em;}
+    .redes li{ font-size: 1em; padding: 10px 5px;}
+
+    .galery{ 
+        flex-direction: column;
+        padding: 15% 0 0;
+    }
+        .item{ width: 80%; margin: 10px;}
+        .item img{ height: 10em;}
+    .ciudad{ width: 95%;}
+    .ciudad img{ height: 200px;}
+    .container_agencia{ flex-direction: column;}
+    .agencia{ width: 80%;}
+    .titulo_ciudad{ font-size: 1.5em;}
+    .agencia h3{ font-size: 1em;}
+    .agencia p{ font-size: .7em;}
 }

@@ -2,6 +2,10 @@
 	margin: 0;
 	padding: 0;
 }
+body{ 
+	background-image: url("../images/textura.png");
+	background-repeat: repeat;
+}
 /*-----------------------------------------------------------------BARRA LOGO---------------------------------------------------*/
 .barra_logo{
     background-color: #ffff00;
@@ -27,13 +31,13 @@
 		color: #10455B;
 	}
 	.boton ul{
-		margin: 15px -20px;
+		margin: 15px -10px;
 		display: none;
 		list-style: none;
 		text-align: left;
 		font-size: .8em;
 		background-color: #ffff00;
-		padding: 10px;
+		padding: 10px 35px;
 		position: absolute;
 	}
 	.item a{
@@ -57,8 +61,8 @@
 	font-size: 2em;
 	text-align: center;
 	color: #10455B; 
-	background-image: url("../images/textura.png");
-	background-repeat: repeat;
+	
+	
 }
 	.titulo h1{
 		padding: 10% 0 0;
@@ -143,13 +147,13 @@
     align-items: center;
     justify-content: center;
     color: #F9FAF5;
-    font-size: 1em;
+	font-size: 1em;
 }
     .pie_pag p{ font-size: .8em;}
 	.pie{ margin: 0; text-align: center;}
-	.caja_redes{ width: 50%;}
-	.caja_inst{ width: 25%;}
-	.caja_derec{ width: 25%;}
+	.caja_redes{ width: 40%;}
+	.caja_inst{ width: 30%;}
+	.caja_derec{ width: 30%;}
     .redes li{
         list-style: none;
         display: inline-block;
@@ -158,7 +162,7 @@
     }
 	.redes li a{ color: #F9FAF5;} 
 	
-/*------------------------------------ADAPTABLE------------------------------------------*/
+/*--------------------------------------------------------------ADAPTABLE------------------------------------------------------------------*/
 
 @media( max-width: 480px){
 	.barra_redes{
@@ -168,6 +172,11 @@
 	.boton{ font-size: 1.5em;}
 
 	.barra_logo img{ margin: 2%; width: 40%;}
+
+	.boton ul{
+		margin: 15px -10px;
+		padding: 10px;
+	}
 
 	.titulo{ font-size: 1em; height: 12em; margin: 20% 0 0;}
 
