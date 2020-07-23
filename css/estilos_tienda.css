@@ -6,7 +6,7 @@
 
 .container{
     width: 100%;
-    margin: 20px 0;
+    margin: 10% 0;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -21,24 +21,37 @@ h1{
 }
 img{
     width: 60%; 
-    background-color: indigo;
 }
 
 .menu{
-    width: 50%;
-    margin: 20px;
+    width: 60%;
+    margin: 3%;
     float: right;
-    display: block;
 }
-.menu ul{ list-style: none;}
-.menu ul li{ display: inline-block;}
+.menu ul li{ 
+    display: inline-block; 
+    padding:  1% 5%; 
+    list-style: none;
+} 
 .menu ul li a{
-    display: inline-block;
     text-decoration: none;
     font-size: 1.2em;
-    padding: 15px;
+    padding: 10%;
     color: #595959;
     font-family: 'Comfortaa', cursive;
 }
 .home{ font-weight: bold;}
 .menu ul li a:hover{ color: #2A2A28; }
+
+/*---------------------------------------------------------ADAPTABLE------------------------------------------------------*/
+
+@media (max-width: 480px){
+
+    .menu{ width: 90%; margin: 2% auto; float: none;}
+        .menu ul li{ padding: 1%}
+        .menu ul li a{ font-size: .6em; padding: 1%;}
+
+    .container{ flex-direction: column-reverse;}
+        img{ width: 100%;}
+        h1{ font-size: 1em; width: 90%;}
+}
