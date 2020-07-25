@@ -22,7 +22,6 @@ body{
 	.caja_boton{ width: 5%;}
 	.barra_logo img{ width: 30%; margin: 1%;}
 	.boton{
-		margin: 1.5% 3%;
 		padding: 15px;
 		position: relative;
 		font-size: 2em;

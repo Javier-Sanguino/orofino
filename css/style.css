@@ -39,10 +39,10 @@
             text-align: left;
             margin: 15px -10px;
             background-color: #ffff00;
-            padding: 10px 35px;
+            padding: 10px;
             font-size: .8em;
         }
-        .item a{
+        .item_ a{
             display: block;
             text-decoration: none;
             padding: 10px;
@@ -50,7 +50,7 @@
             color: #10455B;
         }
         .item a:hover{ color: #F9FAF5; transition: .5s;	}
-        .boton:hover ul{
+        .boton_:hover ul{
         	display: block;
         }
 
@@ -119,10 +119,10 @@
         background-color: #10455B;
         border: 0;
         font-size: .8em;
-        color: #F9FAF5;
         border-radius: 40px;
         box-shadow: 1px 1px 5px hsla(198, 82%, 21%, 1);
     }
+        .enlace a{ color: #F9FAF5;}
 
 /*------------------------------------------------FOOTER------------------------------------------------*/
 
