@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
 }
+#container{ display: none;}
+.home{ display: block;}
 
 /*----------------------------------------------BARRA LOGO-------------------------------------------------*/
 
-.barra{
+.barra_{
     width: 100%;
     background-color: #ffff00;
     position: fixed;
@@ -22,7 +24,7 @@
         width: 40%;
         margin: 2%;
     }
-    .boton{
+    .boton_{
         font-size: 1.5em;
         position: relative;
         background-color: #ffff00;
@@ -30,7 +32,7 @@
         color: #10455B;
         padding: 15px;
     }
-        .boton ul{ 
+        .boton_ ul{ 
             display: none;
             position: absolute;
             list-style: none;
@@ -124,7 +126,7 @@
 
 /*------------------------------------------------FOOTER------------------------------------------------*/
 
-.footer{
+.footer_{
     width: 100%;
     background-color: #10455B;
     display: flex;
@@ -137,12 +139,12 @@
     font-size: .8em;
     color: #F9FAF5;
 }
-    .caja_redes{width: 60%;}
-        .redes li{
+    .caja_redes_{width: 60%; }
+        .redes_ li{
             display: inline-block;
             list-style: none;
         }
-        .redes li a{
+        .redes_ li a{
             color: #F9FAF5;
             display: inline-block;
             padding: 10px;
