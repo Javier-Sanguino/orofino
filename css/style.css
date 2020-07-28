@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#container{ display: none;}
+.home{ display: block;}
+
+/*----------------------------------------------BARRA LOGO-------------------------------------------------*/
+
+.barra_{
+    width: 100%;
+    background-color: #ffff00;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+    box-shadow: 1px 1px 7px hsla(5, 1%, 1%, .6);
+}
+    .imagen{ width: 95%;}
+    .caja_boton{ width: 5%;}
+    .imagen img{
+        width: 40%;
+        margin: 2%;
+    }
+    .boton_{
+        font-size: 1.5em;
+        position: relative;
+        background-color: #ffff00;
+        border: 0;
+        color: #10455B;
+        padding: 15px;
+    }
+        .boton_ ul{ 
+            display: none;
+            position: absolute;
+            list-style: none;
+            text-align: left;
+            margin: 15px -10px;
+            background-color: #ffff00;
+            padding: 10px;
+            font-size: .8em;
+        }
+        .item_ a{
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px;
+            color: #10455B;
+        }
+        .item a:hover{ color: #F9FAF5; transition: .5s;	}
+        .boton_:hover ul{
+        	display: block;
+        }
+
+/*----------------------------------------------------INICIO------------------------------------------------*/
+
+.inicio{
+    width: 100%;
+    margin-top: 15%;
+    background-color: #F9FAF5;
+    display: flex;
+    align-items: center;
+    overflow: auto;
+}
+    .inicio img{
+        width: 30%;
+    }
+    .inicio h1{
+        width: 60%;
+        margin: 0 -10% 0 5%;
+        padding: 2% 0 2% 5%;
+        display: inline-block;
+        text-align: left;
+        color: #10455B;
+        font-size: 1em;
+        font-style: italic;
+    }
+        .inicio h1 span{ margin: 15%;}
+    
+/*--------------------------------------------------CONTENEDOR---------------------------------------------------*/
+
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #F9FAF5;
+}
+    .caja{
+        width: 90%;
+        margin: 5% auto;
+        padding: 2%;
+        background-color: #F9FAF5;
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-end;      
+    }
+    .container .caja img{
+        width: 90%;
+        border-radius: 20px;
+        box-shadow: 1px 1px 5px hsla(60, 0%, 0%, .6);
+    }
+    .tag_box{
+        width: 80%;
+        display: inline-block;
+        color: #434343;
+        background-color: hsla(60, 100%, 50%, .8);
+        margin: 5% 2% 0 -7%;
+        padding: 5% 2%;
+        box-shadow: 1px 1px 5px hsla(60, 0%, 0%, .4);
+    }
+    .enlace{ 
+        width: 12%;
+        margin: 0 auto;
+        padding: 2%;
+        background-color: #10455B;
+        border: 0;
+        font-size: .8em;
+        border-radius: 40px;
+        box-shadow: 1px 1px 5px hsla(198, 82%, 21%, 1);
+    }
+        .enlace a{ color: #F9FAF5;}
+
+/*------------------------------------------------FOOTER------------------------------------------------*/
+
+.footer_{
+    width: 100%;
+    background-color: #10455B;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5% 0;
+    font-size: .8em;
+    color: #F9FAF5;
+}
+    .caja_redes_{width: 60%; }
+        .redes_ li{
+            display: inline-block;
+            list-style: none;
+        }
+        .redes_ li a{
+            color: #F9FAF5;
+            display: inline-block;
+            padding: 10px;
+            font-size: 1.5em;
+        }
+    .caja_inst{ width: 50%;}
+    .caja_derec{ width: 50%;}

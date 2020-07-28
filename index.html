@@ -5,17 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" media="(max-width: 480px)" href="css/style.css">
     <link rel="stylesheet" href="css_fonts/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Arya&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/_logo.png">
+    <link rel="icon" href="images/_logo.ico">
     <title>Orofino Ecuador</title>
 </head>
 <body>
-    <div class="container">
+    <div class="container" id="container">
         <nav class="menu">
             <div class="bar_menu">
                 <ul>
@@ -90,6 +91,78 @@
         <div class="nosotros">
             <p>Javier Sanguino &copy2020</p>
         </div>
+    </div>
+
+<!----------------------------------------------------------ADAPTABLE----------------------------------------------------------------------->
+
+    <div class="home">
+        <nav class="barra_">
+            <div class="imagen">
+                <img src="images/logo1.png">
+            </div>
+            <div class="caja_boton">
+                <button class="boton_"><i class="fas fa-bars"></i>
+                    <ul>
+                        <li class="item_"><a href="enlaces/tienda.html">Tienda</a></li>
+                        <li class="item_"><a href="enlaces/nosotros.html">Nosotros</a></li>
+                        <li class="item_"><a href="enlaces/contacto.html">Contacto</a></li>
+                        <li class="item_"><a href="enlaces/contratacion.html">Contratacion</a></li>
+                    </ul>
+                </button>
+            </div>
+        </nav>
+        <section class="inicio">
+            <h1>Más que un lujo... <br><span>Una gran inversion.</span></h1>
+            <img src="images/mano.png">
+        </section>
+        <section class="container">
+            <div class="caja">
+                <div><img src="images/orofino/full2.jpg" title="Ubícanos"></div>
+                <div class="tag_box">
+                    <p>Encuentra nuestra tienda m&aacute;s cercana</p>
+                </div>
+                <button class="enlace">
+                    <a href="enlaces/contacto.html"><i class="fas fa-map-marker-alt"></i></a>
+                </button>
+            </div>
+            <div class="caja">
+                <div><img src="images/orofino/foto3.jpg" title="Contratos"></div>
+                <div class="tag_box">
+                    <p>Contrata tus joyas con nosotros.</p>
+                </div>
+                <button class="enlace">
+                    <a href="enlaces/contratacion.html"><i class="fas fa-hand-holding-usd"></i></a>
+                </button>
+            </div>
+            <div class="caja">
+                <div><img src="images/orofino/foto1.jpg" title="Nosotros"></div>
+                <div class="tag_box">
+                    <p>Hoy es una joya. <span>¡Mañana ser&aacute; tu mejor soluci&oacute;n!</span>
+                </div>
+                <button class="enlace">
+                    <a href="enlaces/nosotros.html"><i class="fas fa-users"></i></a>
+                </button>
+            </div>
+        </section>
+        <footer class="footer_">
+            <div class="pie caja_redes_">
+                <ul class="redes_">
+                    <li><a href="https://www.instagram.com/oro_fino_ecuador/?hl=es-la" target="_blank"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/OrofinoEcuador/" target="_blank"><i
+                                class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=5930958836069&text=Hola%20quisera%20obtener%20más%20información"
+                           target="_blank"><i class="fab fa-whatsapp"></i></li></a>
+                </ul>
+            </div>
+            <div class="pie caja_inst">
+                <p>Orofino</p>
+            </div>
+            <div class="pie caja_derec">
+                <p>Javier Sanguino &copy2020</p>
+            </div>
+        </footer>
     </div>
 </body>
 

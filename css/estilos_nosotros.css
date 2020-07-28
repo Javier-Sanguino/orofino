@@ -2,19 +2,26 @@
 	margin: 0;
 	padding: 0;
 }
-/*-------------------------------------BARRA LOGO--------------------------*/
+body{ 
+	background-image: url("../images/textura.png");
+	background-repeat: repeat;
+}
+/*-----------------------------------------------------------------BARRA LOGO---------------------------------------------------*/
 .barra_logo{
     background-color: #ffff00;
     width: 100%;
-    text-align: center;
-    position: fixed;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	text-align: center;
+	flex-direction: row-reverse;
     top: 0;
 	box-shadow: 1px 1px 7px hsla(5, 1%, 1%, .6);
 }
-	.barra_logo img{ width: 25%;}
+	.imagen{ width: 95%;}
+	.caja_boton{ width: 5%;}
+	.barra_logo img{ width: 30%; margin: 1%;}
 	.boton{
-		margin: 1.5% 3%;
-		float: left;
 		padding: 15px;
 		position: relative;
 		font-size: 2em;
@@ -23,13 +30,13 @@
 		color: #10455B;
 	}
 	.boton ul{
-		margin: 15px -20px;
+		margin: 15px -10px;
 		display: none;
 		list-style: none;
 		text-align: left;
 		font-size: .8em;
 		background-color: #ffff00;
-		padding: 10px;
+		padding: 10px 35px;
 		position: absolute;
 	}
 	.item a{
@@ -49,16 +56,17 @@
 .titulo{
 	width: 100%;
 	height: 20em;
-	margin: 0;
+	margin: 10% 0 0;
 	font-size: 2em;
 	text-align: center;
 	color: #10455B; 
-	background-image: url("../images/textura.png");
-	background-repeat: repeat;
+	
+	
 }
 	.titulo h1{
-		padding: 20% 0 0;
+		padding: 10% 0 0;
 		font-family: 'Playball', cursive;
+		font-style: italic;
 		font-size: 3em;
 	}
 	.titulo h3{
@@ -67,9 +75,9 @@
 
 /*--------------------------------------CAJAS-------------------------------*/
 .container{
-	width: 98%;
+	width: 100%;
 	margin: 0;
-	padding: 1%;
+	padding: 1% 0;
 	background-color: #F9F9ED;
 	box-shadow: 1px 1px 8px #000;
 }
@@ -81,7 +89,7 @@
 	padding: 3%;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-	text-align: justify;
+	text-align: left;
 	background-color: #10455B;
 	box-shadow: 1px 1px 5px #000;
 }
@@ -96,7 +104,7 @@
 	}
 	.contenedor h2{
 		font-size: 2em;
-		margin: 4% 0 0;
+		/*margin: 4% 0 0;*/
 		padding: 1% 0;
 	}
 	.contenedor p{
@@ -131,7 +139,7 @@
 
 /*------------------------------------PIE DE PAGINA--------------------------*/
 
-.pie_pag{
+.footer{
     background-color: #10455B;
     width: 100%;
     height: 150px;
@@ -139,14 +147,58 @@
     align-items: center;
     justify-content: center;
     color: #F9FAF5;
-    font-size: 1em;
+	font-size: 1em;
 }
-    .pie_pag p{ font-size: .8em; }
-    .pie{ margin: 0px 20px; flex: 1; text-align: center;}
+	.pie{ margin: 0; text-align: center;}
+	.caja_redes{ width: 40%;}
+	.caja_inst{ width: 30%;}
+	.caja_derec{ width: 30%;}
     .redes li{
         list-style: none;
         display: inline-block;
-        padding: 10px 15px;
-        font-size: 2.2em;
     }
-    .redes li a{ color: #F9FAF5;} 
+	.redes li a{ 
+		display: inline-block;
+		color: #F9FAF5;
+		padding: 10px 15px;
+		font-size: 2.2em;
+	} 
+	
+/*--------------------------------------------------------------ADAPTABLE------------------------------------------------------------------*/
+
+@media( max-width: 480px){
+	.barra_redes{
+		display: none;
+	}
+
+	.boton{ font-size: 1.5em;}
+
+	.barra_logo img{ margin: 2%; width: 40%;}
+
+	.boton ul{
+		margin: 15px -10px;
+		padding: 10px;
+	}
+
+	.titulo{ font-size: 1em; height: 12em; margin: 20% 0 0;}
+
+	.contenedor{ width: 90%;}
+	.contenedor p{ font-size: .6em;}
+	.contenedor h2{ font-size: 1.5em;}
+
+	.footer{ 
+		height: auto;
+		padding: 5% 0;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		font-size: .8em;
+	}
+	.caja_redes{ width: 60%;}
+	.caja_inst{ width: 50%;}
+	.caja_derec{ width: 50%;}
+	.redes li a{ font-size: 1.5em; padding: 10px;}
+}
