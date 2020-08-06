@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*----------------------------------------------CAJAS PRINCIPALES-----------------------------------------------*/
+main{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.container{
+    width: 90%;
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+}
+
+.colum{
+    width: 10%;
+    background-color: #ffff00;
+}
+
+.footer{
+    width: 100%;
+    background-color: #10455B;
+}
+
+/*-------------------------------------------CAJA CONTENIDO-----------------------------------------------*/
+
+/*---------------------------------MENU--------------------------*/
+    .bar_menu{
+        width: 80%;
+        margin: 15px auto;
+        background-color: #F9FAF5;
+        border-radius: 50px;
+        box-shadow: 1px 1px 10px hsla(5, 1%, 1%, .3);
+        font-size: 10px;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+    }
+    .item{
+        width: 20%;
+        display: inline-block;
+        padding: 0;
+        margin: 1%;
+        list-style: none;
+    }
+    .linea{ 
+        font-weight: bold; 
+        font-size: 1.5em; 
+        color: #10455B;
+        width: 2%;
+    }
+    .icon_caja{
+        width: 5%;
+    }
+    .item a{
+        text-decoration: none;
+        /*padding: 15px;*/
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 2em;
+        color: #10455B;
+    }
+    .item a i{ color: #51514D;}
+    .item a:hover{ color: #FFEF38; transition: .5s;}
+/*---------------------------------------------------------------------*/
+
+/*--------------------------------REDES---------------------------------*/
+
+.container_redes{
+    text-align: right;
+    font-size: 16px;
+}
+    .bar-redes{
+        list-style: none;
+    }
+        .bar-redes li{
+            display: inline-block;
+            margin: 1%;   
+        }
+        .bar-redes a i{ 
+            padding: 5px 10px;
+            color: #10455B;
+            display: inline-block;
+            font-size: 1.5em;
+        }
+/*-------------------------------------------------------------------------*/
+
+/*--------------------------------------HOME-------------------------------*/
+
+.caja{
+    width: 100%;
+}
+    .caja img{
+        width: 500px;
+    }
+
+.home{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 16px;
+}
+    .home img{
+        width: 40%;
+    }
+    .home h1{
+        width: 60%;
+        text-align: right;
+        font-style: italic;
+        color: #10455B;
+        font-size: 3em;
+        margin-right: 10%;
+    }
+        .home h1 span{
+            margin-right: -12%;
+        }
+
+/*---------------------------------FOOTER------------------------------------*/
+
+.footer{
+    background-color: #10455B;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #F9FAF5;
+    font-size: 1em;
+}
+    .caja_redes{ width: 40%;}
+    .caja_inst{ width: 30%;}
+    .caja_derec{ width: 30%;}
+    .pie{ margin: 0; text-align: center;}
+    .redes li{
+        list-style: none;
+        display: inline-block;
+    }
+    .redes li a{ 
+        color: #F9FAF5;
+        padding: 10px 15px;
+        display: inline-block;
+        font-size: 2.2em;
+    }
