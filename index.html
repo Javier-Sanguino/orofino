@@ -2,7 +2,7 @@
 <html lang="es">
 
 <head>
-    <link rel="icon" href="./images/logo_orofino.png" type="image/png">
+    <link rel="icon" href="./images/logo.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/estilos.css">
@@ -12,10 +12,11 @@
     <title>Orofino Ecuador</title>
 </head>
 <body>
-    <div class="container" id="container">
-        <nav class="menu">
-            <div class="bar_menu">
-                <ul>
+    <main>
+        <section class="container">
+            <div class="encabezado">
+                <nav class="menu">
+                <ul class="bar_menu">
                     <li class="item"><a href="enlaces/tienda.html">Tienda</a></li>
                     <li class="item linea">|</li>
                     <li class="item"><a href="enlaces/nosotros.html">Nosotros</a></li>
@@ -26,71 +27,85 @@
                     <li class="item linea">|</li>
                     <li class="item"><a href="#"><i class="fas fa-shopping-bag icon"></i></a></li>
                     <li class="item linea">|</li>
-                    <li class="item"><a href="#"><i class="fas fa-user icon"></i></a></li>
+                    <li class="item icon_caja"><a href="#"><i class="fas fa-user icon"></i></a></li>
                 </ul>
+                </nav>
+                <div class="container_redes">
+                <ul class="bar-redes">
+                    <li><a href="https://www.instagram.com/oro_fino_ecuador/?hl=es-la" target="_blank"><i
+                        class="fab fa-instagram insta"></i></a></li>
+                    <li><a href="https://www.facebook.com/OrofinoEcuador/" target="_blank"><i
+                        class="fab fa-facebook-square face"></i></a></li>
+                    <li><a href="#"><i class="fas fa-envelope mail"></i></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=5930963078274&text=Hola%20quisera%20obtener%20más%20información"
+                        target="_blank"><i class="fab fa-whatsapp whap"></i></a></li>
+                </ul>
+                </div>
             </div>
-        </nav>
-        <div id="texto_1" class="texto">
-            <ul class="bar-redes">
-                <li><a href="https://www.instagram.com/oro_fino_ecuador/?hl=es-la" target="_blank"><i
-                    class="fab fa-instagram insta"></i></a></li>
-                <li><a href="https://www.facebook.com/OrofinoEcuador/" target="_blank"><i
-                    class="fab fa-facebook-square face"></i></a></li>
-                <li><a href="#"><i class="fas fa-envelope mail"></i></a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=5930958836069&text=Hola%20quisera%20obtener%20más%20información"
-                    target="_blank"><i class="fab fa-whatsapp whap"></i></a></li>
-            </ul>
-            <p>Más que un lujo... <br> Una gran inversi&oacute;n. <br>
-                <span class="text">Invierte Con Nosotros</span><br><a href="enlaces/contacto.html"
-                class="boton">UBICANOS</a></p>
-        </div>
-        <div id="foto_1" class="foto">
-            <img src="images/orofino/fondo.jpg" alt="joyas">
-        </div>
-        <div id="texto_2" class="texto">
-            <p>Contrata tus joyas con nosotros. <strong>Rápido, fácil y seguro</strong><br><a
-                    href="enlaces/contratacion.html" class="boton">CONTRATACION</a></p>
-        </div>
-        <div id="foto_2" class="foto">
-            <img src="images/orofino/foto1.jpg" alt="pulsos de hombre">
-        </div>
-        <div id="texto_3" class="texto">
-            <p>Hoy es una joya. <span>¡mañana será tu mejor solución!</span><br>
-                <a href="enlaces/nosotros.html" class="boton">NOSOTROS</a></p>
-        </div>
-        <div id="foto_3" class="foto">
-            <img src="images/orofino/foto3.jpg" alt="foto">
-        </div>
-        <aside class="logo">
-            <img src="images/logo1.png" alt="logo" id="logo">
-        </aside>
-        <article class="columna">
-            <div class="text_colum">
+            <div class="home">
+                <h1>Más que un lujo... <br><span>Una gran inversi&oacute;n.</span></h1>
+                <img src="./images/portada.png">
+            </div>
+            <div class="caja reverse">
+                <figure><img src="./images/orofino/full2.jpg" title="Ubícanos"></figure>
+                <div class="tag_box">
+                    <p>Encuentra nuestra tienda m&aacute;s cercana</p>
+                </div>
+                <button class="boton">
+                    <a href="enlaces/contacto.html" title="Ub&iacute;canos"><i class="fas fa-map-marker-alt"></i></a>
+                </button>
+            </div>
+            <div class="caja">
+                <figure><img src="images/orofino/foto3.jpg" title="Contratos"></figure>
+                <div class="tag_box">
+                    <p>Contrata tus joyas con nosotros. <br><strong>Rápido, fácil y seguro</strong></p>
+                </div>
+                <button class="boton">
+                    <a href="enlaces/contratacion.html" title="Contrata"><i class="fas fa-hand-holding-usd"></i></a>
+                </button>
+            </div>
+            <div class="caja reverse">
+                <figure><img src="images/orofino/foto1.jpg" title="Nosotros"></figure>
+                <div class="tag_box">
+                    <p>Hoy es una joya. <strong>¡Mañana ser&aacute; tu mejor soluci&oacute;n!</strong>
+                </div>
+                <button class="boton">
+                    <a href="enlaces/nosotros.html" title="Nosotros"><i class="fas fa-users"></i></a>
+                </button>
+            </div>
+        </section>
+        <section class="colum">
+            <figure class="logo">
+                <img src="./images/logo1.png" width="100%">
+            </figure>
+            <div>
                 <p>INVIERTE</p>
             </div>
-        </article>
-        <div class="redes">
-            <ul>
-                <li><a href="https://www.instagram.com/oro_fino_ecuador/?hl=es-la" target="_blank"><i
-                            class="fab fa-instagram insta"></i></a></li>
-                <li><a href="https://www.facebook.com/OrofinoEcuador/" target="_blank"><i
-                            class="fab fa-facebook-square face"></i></a></li>
-                <li><i class="fas fa-envelope mail"></i></li>
-                <li><a href="https://api.whatsapp.com/send?phone=5930958836069&text=Hola%20quisera%20obtener%20más%20información"
-                        target="_blank"><i class="fab fa-whatsapp whap"></i></li></a>
-            </ul>
-        </div>
-        <div class="contacto">
-            <p>Orofino</p>
-        </div>
-        <div class="nosotros">
-            <p>Javier Sanguino &copy2020</p>
-        </div>
-    </div>
+        </section>
+        <footer class="footer">
+            <div class="pie caja_redes_">
+                <ul class="redes">
+                    <li><a href="https://www.instagram.com/oro_fino_ecuador/?hl=es-la" target="_blank"><i
+                                class="fab fa-instagram"></i></a></li>
+                    <li><a href="https://www.facebook.com/OrofinoEcuador/" target="_blank"><i
+                                class="fab fa-facebook-square"></i></a></li>
+                    <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+                    <li><a href="https://api.whatsapp.com/send?phone=5930963078274&text=Hola%20quisera%20obtener%20más%20información"
+                           target="_blank"><i class="fab fa-whatsapp"></i></li></a>
+                </ul>
+            </div>
+            <div class="pie caja_inst">
+                <p>Orofino</p>
+            </div>
+            <div class="pie caja_derec">
+                <p>Javier Sanguino &copy2020</p>
+            </div>
+        </footer>
+    </main>
 
 <!----------------------------------------------------------ADAPTABLE----------------------------------------------------------------------->
 
-    <div class="home">
+    <div class="home_adaptable">
         <nav class="barra_">
             <div class="imagen">
                 <img src="images/logo1.png">

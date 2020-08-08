@@ -2,8 +2,8 @@
     padding: 0;
     margin: 0;
 }
-#container{ display: none;}
-.home{ display: block;}
+main{ display: none;}
+.home_adaptable{ display: block;}
 
 /*----------------------------------------------BARRA LOGO-------------------------------------------------*/
 
