@@ -36,9 +36,60 @@ main{
 
 /*-------------------------------------------CAJA CONTENIDO-----------------------------------------------*/
 
+/*------------------------------------------ENCABEZADO-----------------------------------------------------*/
+
 .encabezado{
     box-shadow: 1px 1px 15px hsla(5, 1%, 1%, .3);
 }
+
+.barra{
+    width: 100%;
+    background-color: #ffff00;
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    text-align: center;
+    box-shadow: 1px 1px 7px hsla(5, 1%, 1%, .6);
+}
+    .imagen{ width: 95%;}
+    .caja_boton{ width: 5%;}
+    .imagen img{
+        width: 40%;
+        margin: 2%;
+    }
+    .boton_{
+        font-size: 1.5em;
+        position: relative;
+        background-color: #ffff00;
+        border: 0;
+        color: #10455B;
+        padding: 15px;
+    }
+        .boton_ ul{ 
+            display: none;
+            position: absolute;
+            list-style: none;
+            text-align: left;
+            margin: 15px -10px;
+            background-color: #ffff00;
+            padding: 10px;
+            font-size: .8em;
+        }
+        .item_ a{
+            display: block;
+            text-decoration: none;
+            padding: 10px;
+            margin: 5px;
+            color: #10455B;
+        }
+        .item a:hover{ color: #F9FAF5; transition: .5s;	}
+        .boton_:hover ul{
+        	display: block;
+        }
+
+/*-----------------------------------------------------------------------*/
 /*---------------------------------MENU--------------------------*/
 .menu{
     text-align: center;
@@ -113,11 +164,11 @@ main{
         text-align: right;
         font-style: italic;
         color: #10455B;
-        font-size: 3em;
+        font-size: 2em;
         margin-right: 10%;
     }
         .home h1 span{
-            margin-right: -12%;
+            margin-right: -15%;
         }
 
 /*------------------------------------CONTENIDO------------------------------*/
@@ -126,7 +177,9 @@ main{
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
     margin: 1% 0;
 }
 .reverse{
@@ -135,6 +188,7 @@ main{
     figure{
         width: 50%;
         padding: 2%;
+        text-align: center;
     }
         .caja figure img{
             width: 100%;
@@ -145,11 +199,11 @@ main{
         width: 30%;
         padding: 2%;
         font-family: 'Noto Serif', serif;
-        font-size: 2em;
+        font-size: 1.5em;
         color: #10455B;
     }
     .boton{
-        width: 6%;
+        width: 8%;
         padding: .5%;
         border: 0;
         font-size: 2em;
@@ -181,7 +235,7 @@ main{
 .colum div p{
     transform: rotate(270deg);
     width: 100%;
-    font-size: 25em; 
+    font-size: 22em; 
     color: white;
     list-style: none;
     font-family: 'Bebas Neue', cursive;
@@ -193,6 +247,7 @@ main{
     width: 100%;
     height: 150px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     color: #F9FAF5;
@@ -214,17 +269,49 @@ main{
     }
 /*------------------------------------------------------------------------------------------------------------------------------------*/
 
+@media( max-width: 2560px){
+    .barra{ display: none;}
+}
+
 @media( max-width: 1024px){
     .colum div p{ font-size: 18em;}
     .boton{ font-size: 1.5em;}
 }
 
 @media ( max-width: 768px){
-    .colum div p{ font-size: 14em;}
+    .colum div p{ font-size: 12em;}
     .boton{ font-size: 1em;}
     .item a{ font-size: 1.5em;}
     .linea{ font-size: 2.5em;}
-    .home h1{ font-size: 2em;}
+    .home h1{ font-size: 1.5em;}
     .home h1 span{ margin-right: -20%;}
     .tag_box{ font-size: 1.4em;}
+}
+
+@media( max-width: 767px){
+    .colum{ display: none;}
+    .container{ width: 100%;}
+    .barra{ display: flex;}
+    .menu{ display: none;}
+    .container_redes{ display: none;}
+    .home{ margin-top: 15%;}
+    .caja_redes{ width: 80%;}
+    .caja_inst{ width: 50%;}
+    .caja_derec{ width: 50%;}
+    .footer{ height: 100px; font-size: .8em;}
+    .redes li a{ font-size: 2.2em;}
+    figure{ width: 80%;}
+    .tag_box{ width: 60%;}
+    .reverse{ flex-direction: row;}
+    .caja figure img{ width: 60%;}
+}
+
+@media (max-width: 480px){
+    .home h1{ font-size: 1em;}
+    .tag_box{ font-size: .8em;}
+    .boton{ font-size: .6em;}
+}
+
+@media (max-width: 425px){
+    .home h1{ font-size: .6em;}
 }
