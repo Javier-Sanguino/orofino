@@ -2,13 +2,14 @@
 	margin: 0;
 	padding: 0;
 }
+
 body{ 
 	background-image: url("../images/textura.png");
 	background-repeat: repeat;
 }
 /*-----------------------------------------------------------------BARRA LOGO---------------------------------------------------*/
 .barra_logo{
-    background-color: #ffff00;
+    background-color: hsla(60, 100%, 50%, 1);
     width: 100%;
 	position: fixed;
 	display: flex;
@@ -20,7 +21,7 @@ body{
 }
 	.imagen{ width: 95%;}
 	.caja_boton{ width: 5%;}
-	.barra_logo img{ width: 30%; margin: 1%;}
+	.barra_logo img{ width: 25%;}
 	.boton{
 		padding: 15px;
 		position: relative;
@@ -55,16 +56,17 @@ body{
 
 .titulo{
 	width: 100%;
-	height: 20em;
-	margin: 10% 0 0;
-	font-size: 2em;
+	height: 500px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 	text-align: center;
-	color: #10455B; 
-	
-	
+	margin: 7% 0 0;
+	font-size: 2em;
+	color: #10455B;
 }
 	.titulo h1{
-		padding: 10% 0 0;
 		font-family: 'Playball', cursive;
 		font-style: italic;
 		font-size: 3em;
@@ -76,47 +78,48 @@ body{
 /*--------------------------------------CAJAS-------------------------------*/
 .container{
 	width: 100%;
-	margin: 0;
 	padding: 1% 0;
 	background-color: #F9F9ED;
 	box-shadow: 1px 1px 8px #000;
 }
-.contenedor{
+.caja{
 	width: 80%;
 	margin: 5% auto;
-	overflow: auto;
-	font-size: 16px;
-	padding: 3%;
+	padding: 1%;
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
-	text-align: left;
 	background-color: #10455B;
-	box-shadow: 1px 1px 5px #000;
+	box-shadow: 1px 1px 7px #000;
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
 }
-	.contenedor img{
-		float: right;
-		padding: 1% 4%;
+	.caja_img{
 		width: 50%;
+		text-align: center;
 	}
-	.caja_2 img{
-		float: left;
-		margin: 10px;
+		.caja_img img{
+			padding: 1% 4%;
+			width: 90%;
+		}
+	.texto{
+		width: 40%;
+		padding: 2% 0 5%;
 	}
-	.contenedor h2{
-		font-size: 2em;
-		/*margin: 4% 0 0;*/
-		padding: 1% 0;
-	}
-	.contenedor p{
-		padding: 2% 1%;
-		font-size: 1em;
-	}
+		.texto h2{
+			font-size: 2em;
+			padding: 2% 0;
+		}
+		.texto p{
+			margin-left: 4%;
+		}
 
 /*------------------------------------BARRA REDES-----------------------------*/
 
 .barra_redes{
 	position: fixed;
-	top: 200px;
+	top: 150px;
 	left: 0;
 	padding: 0;
 }	
@@ -125,7 +128,7 @@ body{
 		color: #fff;
 		text-decoration: none;
 		display: inline-block;
-		box-shadow: 1px 1px 5px #000;
+		box-shadow: 1px 1px 7px hsla(5, 1%, 1%, .6);
 		padding: 10px 15px;
 		font-size: 1.5em;
 	}
@@ -144,7 +147,8 @@ body{
     background-color: #10455B;
     width: 100%;
     height: 150px;
-    display: flex;
+	display: flex;
+	flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     color: #F9FAF5;
@@ -167,39 +171,42 @@ body{
 	
 /*--------------------------------------------------------------ADAPTABLE------------------------------------------------------------------*/
 
-@media( max-width: 480px){
-	.barra_redes{
-		display: none;
-	}
+@media(max-width: 1024px){
 
+}
+
+@media(max-width: 768px){
+	.barra_redes{ display: none;}
+	.titulo h3{ font-size: 1em;}
 	.boton{ font-size: 1.5em;}
-
-	.barra_logo img{ margin: 2%; width: 40%;}
-
-	.boton ul{
-		margin: 15px -10px;
-		padding: 10px;
-	}
-
-	.titulo{ font-size: 1em; height: 12em; margin: 20% 0 0;}
-
-	.contenedor{ width: 90%; font-size: 12px; display: block;}
-	.contenedor p{ font-size: .6em;}
-	.contenedor h2{ font-size: 1.5em;}
-
-	.footer{ 
-		height: auto;
-		padding: 5% 0;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: center;
-		text-align: center;
-		font-size: .8em;
-	}
-	.caja_redes{ width: 60%;}
+	.caja{ flex-direction: column;}
+	.caja_img{ width: 80%;}
+	.caja_img img{ width: 60%;}
+	.texto{ width: 95%;}
+	.footer{ height: 100px;}
+	.caja_redes{ width: 80%;}
 	.caja_inst{ width: 50%;}
 	.caja_derec{ width: 50%;}
-	.redes li a{ font-size: 1.5em; padding: 10px;}
+	.redes li a{ font-size: 2em;}
+}
+
+@media( max-width: 767px){
+
+	.titulo h1{ font-size: 2.5em;}
+	.imagen img{ width: 40%;}
+}
+
+@media( max-width: 480px){
+
+	.titulo h1{ font-size: 2em;}
+	.titulo h3{ font-size: .8em;}
+	.caja_img img{ width: 90%;}
+	.texto h2{ font-size: 1.5em;}
+	.texto p{ font-size: .8em;}
+}
+
+@media( max-width: 375px){
+
+	.titulo h1{ font-size: 1.5em;}
+	.titulo h3{ font-size: .5em;}
 }

@@ -289,6 +289,7 @@ main{
 }
 
 @media( max-width: 767px){
+    
     .colum{ display: none;}
     .container{ width: 100%;}
     .barra{ display: flex;}
@@ -304,14 +305,14 @@ main{
     .tag_box{ width: 60%;}
     .reverse{ flex-direction: row;}
     .caja figure img{ width: 60%;}
+    .boton{ font-size: 1em; width: 12%; padding: 1%;}
 }
 
 @media (max-width: 480px){
     .home h1{ font-size: 1em;}
-    .tag_box{ font-size: .8em;}
-    .boton{ font-size: .6em;}
+    .tag_box{ font-size: .8em;} 
 }
 
 @media (max-width: 425px){
-    .home h1{ font-size: .6em;}
+    .home h1{ font-size: .7em;}
 }
