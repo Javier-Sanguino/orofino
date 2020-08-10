@@ -1,4 +1,5 @@
 *{ margin: 0; padding: 0;}
+
 body{
     background-image: url("../images/textura.png");
     background-repeat: repeat;
@@ -7,7 +8,7 @@ body{
 /*--------------------------------BARRA LOGO--------------------------------*/
 
 .barra_logo{
-    background-color: #ffff00;
+    background-color: hsla(60, 100%, 50%, .2);
     width: 100%;
     text-align: center;
     position: fixed;
@@ -18,7 +19,7 @@ body{
     top: 0;
     box-shadow: 1px 1px 7px hsla(5, 1%, 1%, .8);
 }
-    .barra_logo img{ width: 30%; margin: 1%;}
+    .barra_logo img{ width: 25%;}
     .imagen{ width: 95%;}
     .caja_boton{ width: 5%}
     .boton{
@@ -57,10 +58,11 @@ body{
 .inicio{
     margin: 7% 0 0;
     width: 100%;
-    height: 17em;
+    height: 600px;
     color: #10455B;
     font-size: 2em;
     font-weight: bold;
+    background-color: indigo;
 }
     .inicio h1{
         display: inline-block;

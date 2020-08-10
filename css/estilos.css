@@ -289,7 +289,7 @@ main{
 }
 
 @media( max-width: 767px){
-    
+
     .colum{ display: none;}
     .container{ width: 100%;}
     .barra{ display: flex;}
