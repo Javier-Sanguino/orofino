@@ -225,6 +225,7 @@ hr{
     .ciudad{ width: 95%;}
     .ciudad img{ height: 200px;}
     .agencia{ width: 80%;}
+    .boton-up{ left: 80vw;}
     .boton-up button{ font-size: 1.5em;}
     .titulo_ciudad{ font-size: 1.5em;}
     .agencia h3{ font-size: 1em;}
