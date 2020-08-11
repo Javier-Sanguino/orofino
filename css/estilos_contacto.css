@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
 }
+body{ background-color: #F9F9ED;}
 
 /*---------------------------------------------BARRA LOGO---------------------------------*/
 .barra_logo{
@@ -13,6 +14,7 @@
     align-items: center;
     text-align: center;
     top: 0;
+    z-index: 2;
     box-shadow: 1px 1px 7px hsla(5, 1%, 1%, .6);
 }
     .imagen{ width: 95%;}
@@ -48,7 +50,23 @@
     .boton:hover ul{
         display: block;
     }
-/*-----------------------------------------TITULO-----------------------------------------*/
+/*-----------------------------------------BOTON-UP-----------------------------------------*/
+
+.boton-up{
+    position: sticky;
+    top: 85vh;
+    left: 94vw;
+    display: inline-block;   
+}
+    .boton-up button{
+        padding: 15px;
+        font-size: 2.5em;
+        border: 0;
+        background-color: hsla(198, 82%, 21%, .7);
+        border-radius: 50%;
+    }
+    .boton-up button a{ color: white;}
+
 
 /*-----------------------------------------GALERIA------------------------------------------*/
 
@@ -61,7 +79,6 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background-color: #F9F9ED;
 }
     .item{
         margin: 10px;
@@ -83,7 +100,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #F9FAF5;
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -196,6 +212,8 @@ hr{
     .ciudad{ width: 90%;}
     .container_agencia{ flex-direction: column; align-items: center;}
     .agencia{ width: 50%;}
+    .boton-up{ left: 90vw;}
+    .boton-up button{ font-size: 2em; padding: 12px;}
     .caja_redes{ width: 80%;}
     .caja_inst{ width: 50%;}
     .caja_derec{ width: 50%;}
@@ -207,8 +225,12 @@ hr{
     .ciudad{ width: 95%;}
     .ciudad img{ height: 200px;}
     .agencia{ width: 80%;}
+    .boton-up button{ font-size: 1.5em;}
     .titulo_ciudad{ font-size: 1.5em;}
     .agencia h3{ font-size: 1em;}
     .agencia p{ font-size: .8em;}
-    
+}
+
+@media( max-width: 320px){
+    .boton-up button{ font-size: 1.2em; padding: 10px;}
 }
