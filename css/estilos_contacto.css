@@ -212,7 +212,7 @@ hr{
     .ciudad{ width: 90%;}
     .container_agencia{ flex-direction: column; align-items: center;}
     .agencia{ width: 50%;}
-    .boton-up{ left: 90vw;}
+    .boton-up{ left: 85vw;}
     .boton-up button{ font-size: 2em; padding: 12px;}
     .caja_redes{ width: 80%;}
     .caja_inst{ width: 50%;}
@@ -232,5 +232,5 @@ hr{
 }
 
 @media( max-width: 320px){
-    .boton-up button{ font-size: 1.2em; padding: 10px;}
+    .boton-up button{ font-size: 1em; padding: 10px;}
 }
