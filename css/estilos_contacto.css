@@ -17,7 +17,7 @@
 }
     .imagen{ width: 95%;}
     .caja_boton{ width: 5%;}
-    .barra_logo img{ width: 30%; margin: 1%;}
+    .barra_logo img{ width: 25%;}
     .boton{
         margin: 1.5% 3%;
         padding: 15px;
@@ -70,7 +70,7 @@
         width: 25%;
     }
     .item p{ color: #558C8C; font-size: 1.5em; font-family: 'Open Sans', sans-serif;}
-    .item img{ width: 90%; height: 15em; box-shadow: 1px 1px 3px #000;}
+    .item img{ width: 90%; height: 250px; box-shadow: 1px 1px 3px #000;}
     .item img:hover{ box-shadow: 1px 1px 10px #000; transition: .3s}
     
 
@@ -159,6 +159,7 @@
     width: 100%;
     height: 150px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     color: #F9FAF5;
@@ -186,47 +187,28 @@ hr{
 
 /*------------------------------------------------------------ADAPTABLE-------------------------------------------------------------------*/
 
-@media( max-width: 480px){
-    .barra_redes{
-        display: none;
-    }
-
+@media( max-width: 768px){
+    .barra_redes{ display: none;}
+    .imagen img{ width: 40%;}
     .boton{ font-size: 1.5em;}
-
-    .barra_logo img{ margin: 2%; width: 40%;}
-
-    .boton ul{
-        margin: 15px -10px;
-        padding: 10px;
-    }
-
-    .galery{ 
-        flex-direction: column;
-        padding: 15% 0 0;
-    }
-        .item{ width: 80%; margin: 10px;}
-        .item img{ height: 10em;}
-    .ciudad{ width: 95%;}
-    .ciudad img{ height: 200px;}
-    .container_agencia{ flex-direction: column;}
-    .agencia{ width: 80%; margin: 1% auto;}
-    .titulo_ciudad{ font-size: 1.5em;}
-    .agencia h3{ font-size: 1em;}
-    .agencia p{ font-size: .7em;}
-
-    .footer{ 
-        height: auto;
-        padding: 5% 0;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        font-size: .8em;
-    }
-    .caja_redes{ width: 60%;}
+    .galery{ flex-direction: column;}
+    .item{ width: 60%;}
+    .ciudad{ width: 90%;}
+    .container_agencia{ flex-direction: column; align-items: center;}
+    .agencia{ width: 50%;}
+    .caja_redes{ width: 80%;}
     .caja_inst{ width: 50%;}
     .caja_derec{ width: 50%;}
-    .redes li a{ font-size: 1.5em; padding: 10px;}
+}
+@media( max-width: 480px){
+   .galery{ padding-top: 12%;}
+    .item{ width: 80%;}
+    .item img{ height: 200px;}
+    .ciudad{ width: 95%;}
+    .ciudad img{ height: 200px;}
+    .agencia{ width: 80%;}
+    .titulo_ciudad{ font-size: 1.5em;}
+    .agencia h3{ font-size: 1em;}
+    .agencia p{ font-size: .8em;}
+    
 }
