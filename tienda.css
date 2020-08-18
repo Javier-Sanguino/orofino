@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.barra_logo{
+    background-color: hsla(60, 100%, 50%, 1);
+    width: 100%;
+    text-align: center;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: row-reverse;
+    top: 0;
+    box-shadow: 1px 1px 7px hsla(5, 1%, 1%, .6);
+}
+    .barra_logo img{ width: 25%;}
+    .imagen{ width: 95%;}
+    .caja_boton{ width: 5%}
+    .boton{
+        margin: 1.5% 3%;
+        padding: 15px;
+        position: relative;
+        font-size: 2em;
+        background-color: #ffff00;
+        border: 0;
+        color: #10455B;
+    }
+    .boton ul{
+        margin: 15px -10px;
+        display: none;
+        list-style: none;
+        text-align: left;
+        font-size: .8em;
+        background-color: #ffff00;
+        padding: 10px 35px;
+        position: absolute;
+    }
+    .item_menu a{
+        text-align: left;
+        display: inline-block;
+        text-decoration: none;
+        padding: 15px 40px 5px 10px;
+        margin: 5px;
+        color: #10455B;
+    }
+    .item_menu a:hover{ color: #F9FAF5; transition: .5s; }
+    .boton:hover ul{
+        display: block;
+    }
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*------------------------------------------------------------------------------------------------------------------*/
+
+.home{
+    width: 100%;
+    display: flex;
+    margin-top: 7%;
+}
+
+.img-home{ 
+    width: 60%;
+}
+    .home figure img{ 
+        width: 100%;
+    }
+
+.home h1{
+    width: 40%;
+}
