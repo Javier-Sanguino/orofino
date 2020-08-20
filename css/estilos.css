@@ -313,28 +313,24 @@ main{
     .caja figure img{ width: 80%;}
     .tag_box{ 
         width: 70%;
-        height: 35px;
         display: flex;
+        padding: 0;
         align-items: center;
         font-size: .8em;
         background-color: #ffff00;
-        margin-left: -10%;
+        margin-left: -13%;
         position: relative;
         -webkit-box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.25);
--moz-box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.25);
-box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.25);
+        -moz-box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.25);
+        box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.25);
     } 
-    .tag_box p{ padding-right: 30x;}
+    .tag_box p{ padding: 0 5px;}
         .tag_box::after{
             content: '';
-            position: absolute;
-            right: 0;
-            top: 0;
-            width: 0;
             height: 0;
             border-style: solid;
             border-color: transparent white transparent transparent;
-            border-width: 25px 25px 25px 25px;
+            border-width: 25px;
         }
     .boton{ margin-left: 5%;}
 }
