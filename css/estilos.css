@@ -47,7 +47,7 @@ main{
     background-color: #ffff00;
     position: fixed;
     top: 0;
-    z-index: 1;
+    z-index: 2;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
@@ -167,6 +167,7 @@ main{
         color: #10455B;
         font-size: 2em;
         margin-right: 10%;
+        z-index: 1;
     }
         .home h1 span{
             margin-right: -15%;
@@ -313,27 +314,32 @@ main{
     .caja figure img{ width: 80%;}
     .tag_box{ 
         width: 70%;
+        padding: 0;
         display: flex;
-        padding: 10px;
         align-items: center;
+        justify-content: space-between;
         font-size: .8em;
         background-color: #ffff00;
         margin-left: -13%;
-        position: relative;
         -webkit-box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.25);
         -moz-box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.25);
         box-shadow: 0px 15px 15px -10px rgba(0,0,0,0.25);
     } 
     .tag_box p{ padding: 0 5px;}
-        .tag_box::after{
-            position: absolute;
-            right: 0;
-            content: '';
-            height: 0;
-            border-style: solid;
-            border-color: transparent white transparent transparent;
-            border-width: 30PX;
-        }
+    .tag_box::after{
+        content: '';
+        border-style: solid;
+        border-color: transparent white transparent transparent;
+        border-width: 20px;
+        height: 0;
+    }
+    .cajax .tag_box{ 
+        width: 75%; 
+        margin-left: -8%;
+    }
+    .cajax .tag_box::after{
+        border-width: 25px;
+    }
     .boton{ margin-left: 5%;}
 }
 
