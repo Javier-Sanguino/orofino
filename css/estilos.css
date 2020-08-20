@@ -314,7 +314,7 @@ main{
     .tag_box{ 
         width: 70%;
         display: flex;
-        padding: 0;
+        padding: 10px;
         align-items: center;
         font-size: .8em;
         background-color: #ffff00;
@@ -326,11 +326,13 @@ main{
     } 
     .tag_box p{ padding: 0 5px;}
         .tag_box::after{
+            position: absolute;
+            right: 0;
             content: '';
             height: 0;
             border-style: solid;
             border-color: transparent white transparent transparent;
-            border-width: 25px;
+            border-width: 30PX;
         }
     .boton{ margin-left: 5%;}
 }
