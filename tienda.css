@@ -4,61 +4,44 @@
 }
 
 .barra_logo {
-  background-color: hsla(60, 100%, 50%, 1);
+  background-color: #F4F4F4;
   width: 100%;
-  text-align: center;
-  position: fixed;
-  z-index: 2;
   display: flex;
-  align-items: center;
-  text-align: center;
-  flex-direction: row-reverse;
-  top: 0;
-  box-shadow: 1px 1px 7px hsla(5, 1%, 1%, 0.6);
+  align-items: flex-end;
+  justify-content: space-between;
+  flex-direction: row;
+  box-shadow: 1px 1px 7px hsla(5, 1%, 1%, 0.3);
 }
-.barra_logo img {
+  .boton_home{
+    width: 20%;
+    text-align: left;
+    padding: 1% 2%;
+  }
+    .boton_home a i{ 
+      font-size: 2.2em;
+      color: #10455B;
+    }
+    .boton_home a i:hover{ color: #fffF00; transition: .3s;}
+
+.imagen {
   width: 25%;
 }
-.imagen {
-  width: 95%;
+  .imagen img{ width: 100%;}
+
+.caja_boton{
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1%;
 }
-.caja_boton {
-  width: 5%;
-}
-.boton {
-  margin: 1.5% 3%;
-  padding: 15px;
-  position: relative;
-  font-size: 2em;
-  background-color: #ffff00;
-  border: 0;
-  color: #10455b;
-}
-.boton ul {
-  margin: 15px -10px;
-  display: none;
-  list-style: none;
-  text-align: left;
-  font-size: 0.8em;
-  background-color: #ffff00;
-  padding: 10px 35px;
-  position: absolute;
-}
-.item_menu a {
-  text-align: left;
-  display: inline-block;
-  text-decoration: none;
-  padding: 15px 40px 5px 10px;
-  margin: 5px;
-  color: #10455b;
-}
-.item_menu a:hover {
-  color: #f9faf5;
-  transition: 0.5s;
-}
-.boton:hover ul {
-  display: block;
-}
+  .boton{
+    width: 25%;
+    font-size: 1.5em;
+    margin: 1px;
+    text-align: center;
+  }
+    .boton i{ color: #10455B;}
+    .boton i:hover{ color: #ffff00; transition: .3s;}
 
 /*---------------------------------------------------------------------------------------------------------------*/
 
@@ -67,14 +50,14 @@
 .home {
   width: 100%;
   display: flex;
-  margin-top: 7%;
+  margin: 2% 0;
   align-items: center;
   justify-content: left;
 }
 
 .img-home {
   width: 50%;
-  margin: 0 2% 0 1%;
+  margin-left: -1% ;
 }
 .home figure img {
   width: 100%;
